@@ -2,25 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Form Page</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
     <script  src="js/index.js"></script>
+
+      <h1  id="title">Survey Form</h1>
+
+      <p id="description">Please fill the next form</p>
+
+      <form  id="survey-form">
+          <label id="name-label">Name:</label>
+          <input id="name" type="text" placeholder="Enter your name" title="Please introduce your name"/>
+
+          <label id="email-label">E-mail:</label>
+          <input id="name" type="text" placeholder="Enter your e-mail" title="Please introduce your e-mail"/>
+
+          <label id="number-label">Age:</label>
+          <input id="number" type="number" placeholder="Enter your age" title="Please introduce your age"/>
+          <label id="dropdown"> What do you do</label>
+          <select id="dropdown" title="What do you do?">
+              <option value="pleaseselect">(please select)</option>
+              <option value="studyt">Study</option>
+              <option value="work">Work</option>
+              <option value="Undefined">Undefined</option>
+          </select>
+
+          <div id="hours-online">
+                <label id="hours">How many hours do you spend online:</label>
+                <ul>
+                  <li>
+                    <input name="radio-buttons" value ="1" type="radio"/>
+                    <label>1-3</label>
+                  </li>
+
+                  <li>
+                    <input name="radio-buttons" value ="2" type="radio"/>
+                    <label>4-6</label>
+                  </li>
+
+                  <li>
+                    <input name="radio-buttons" value ="3" type="radio"/>
+                    <label>6-8</label>
+                  </li>
+
+                  <li>
+                    <input name="radio-buttons" value ="4" type="radio"/>
+                    <label>8-12</label>
+                  </li>
+                </ul>
+          </div>
+
+          <div id="interest">
+              <label>What are you interested in:</label>
+              <ul>
+                  <li>
+                    <input type="checkbox" name="front-end" value="front-end">
+                    <label>Front-End</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="back-end" value="back-end">
+                    <label>Back-End</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="full-stack" value="full-stack">
+                    <label>Full-Stack</label>
+                  </li>
+              </ul>
+          </div>
+
+          <div id="comment">
+            <label>Any comment or suggestion?</label>
+            <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+          </div>
+
+          <button id="submit" type="submit">Submit</button>
+
+      </form>
+
   </body>
 </html>
